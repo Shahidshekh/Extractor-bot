@@ -128,6 +128,8 @@ try:
 except:
     TG_SPLIT_SIZE = 2097151000
     
+RESTART_COMMAND = os.environ.get("RESTART_COMMAND", "restart")
+    
 app = Client(name='pyrogram', api_id=int(TELEGRAM_API), api_hash=TELEGRAM_HASH, bot_token=BOT_TOKEN, parse_mode=enums.ParseMode.HTML, no_updates=True)
 
 
