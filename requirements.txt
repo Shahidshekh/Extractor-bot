@@ -4,3 +4,7 @@ aria2p
 asyncio
 python3
 python-dotenv
+aiohttp
+lxml
+requests
+Pillow
