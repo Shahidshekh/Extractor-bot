@@ -2,7 +2,6 @@ pyrogram
 tgcrypto
 aria2p
 asyncio
-python
 python-dotenv
 aiohttp
 lxml
