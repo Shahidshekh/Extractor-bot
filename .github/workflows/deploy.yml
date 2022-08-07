@@ -1,9 +1,8 @@
-name: Manually Deploy to Heroku
+# This is a workflow to deploy a leech bot to heroku using GitHub Actions
 
-on:
-  workflow_dispatch:
-    branches:
-      - "heroku"
+name: Deploy To Heroku
+
+on: workflow_dispatch
 
 jobs:
   deploy:
@@ -16,8 +15,8 @@ jobs:
           heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
           heroku_email: ${{secrets.HEROKU_EMAIL}}
           usedocker: true
-          docker_heroku_process_type: web
+          docker_heroku_process_type: worker
           stack: "container"
-          region: "us"
+          region: "eu"
         env:
-          HD_CONFIG_FILE_URL: ${{secrets.CONFIG_FILE_URL}}
+          HD_CONFIG_ENV_URL: ${{secrets.CONFIG_ENV_URL}}
