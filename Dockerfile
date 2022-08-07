@@ -1,9 +1,11 @@
-FROM anasty17/mltb:heroku
+FROM archlinux:latest
 
-WORKDIR /usr/src/app
-RUN chmod 777 /usr/src/app
-
-COPY . .
-RUN pip3 install --no-cache-dir -r requirements.txt
-
-CMD ["bash", "start.sh"]
+RUN pacman -Syyu --noconfirm
+RUN pacman -S --noconfirm python-pip zstd p7zip gcc
+RUN pip3 install -U pip
+RUN mkdir /app/
+WORKDIR /app/
+COPY . /app/
+RUN pip3 install -U setuptools
+RUN pip3 install -U -r requirements.txt
+CMD bash start.sh
