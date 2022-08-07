@@ -1,0 +1,6 @@
+pyrogram
+tgcrypto
+aria2p
+asyncio
+python3
+python-dotenv
