@@ -1,5 +1,6 @@
 FROM arshsisodiya/helioskirepo:public
 
+RUN apt -qq install -y git
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
 
