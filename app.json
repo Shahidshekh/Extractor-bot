@@ -13,11 +13,11 @@
     "repository": "https://github.com/Shahidshekh/Extractor-bot",
     "success_url": "https://t.me/the_fourth_minato",
     "env": {
-        "TELEGRAM_API": {
+        "API_ID": {
             "description": "Your APP_ID from my.telegram.org",
             "required": true
         },
-        "TELEGRAM_HASH": {
+        "API_HASH": {
             "description": "Your API_HASH from my.telegram.org",
             "required": true
         },
@@ -31,7 +31,7 @@
         },
         "UPSTREAM_REPO" : {
             "description" : "Upstream repo to update from latest commit",
-            "required" : true
+            
         }
        
     },
