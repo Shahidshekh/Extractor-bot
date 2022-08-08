@@ -1,12 +1,12 @@
 from pyrogram.handlers import MessageHandler
 from utils.restart_fn import restart
-from bot import RESTART_COMMAND
+from bot import RESTART_COMMAND, DOWNLOAD_DIR
 
 
 if __name__ == "__main__":
     # create download directory, if not exist
-    if not os.path.isdir(DOWNLOAD_LOCATION):
-        os.makedirs(DOWNLOAD_LOCATION)
+    if not os.path.isdir(DOWNLOAD_DIR):
+        os.makedirs(DOWNLOAD_DIR)
     # Starting The Bot
     app.start()
     
