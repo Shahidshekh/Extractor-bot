@@ -16,7 +16,7 @@ jobs:
           heroku_email: ${{secrets.HEROKU_EMAIL}}
           usedocker: true
           dontuseforce : 1
-          docker_heroku_process_type: worker
+          docker_heroku_process_type: web
           stack: "container"
           region: "eu"
         env:
