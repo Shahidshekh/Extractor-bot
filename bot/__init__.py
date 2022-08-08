@@ -94,31 +94,6 @@ user_settings = defaultdict(lambda: {})
 gid_dict = defaultdict(lambda: [])
 _lock = asyncio.Lock()
 
-# Rclone Config Via any raw url
-###########################################################################
-try:                                                                      #
-    RCLONE_CONF_URL = os.environ.get('RCLONE_CONF_URL', "")               #
-    if len(RCLONE_CONF_URL) == 0:                                         #
-        RCLONE_CONF_URL = None                                            #
-    else:                                                                 #
-        urllib.request.urlretrieve(RCLONE_CONF_URL, '/app/rclone.conf')   #
-except KeyError:                                                          #
-    RCLONE_CONF_URL = None                                                #
-###########################################################################
 
-def multi_rclone_init():
-    if RCLONE_CONFIG:
-        LOGGER.warning("Don't use this var now, put your rclone.conf in root directory")
-    if not os.path.exists("rclone.conf"):
-        LOGGER.warning("Sed, No rclone.conf found in root directory")
-        return
-    if not os.path.exists("rclone_bak.conf"):  # backup rclone.conf file
-        with open("rclone_bak.conf", "w+", newline="\n", encoding="utf-8") as fole:
-            with open("rclone.conf", "r") as f:
-                fole.write(f.read())
-        LOGGER.info("rclone.conf backuped to rclone_bak.conf!")
-
-
-multi_rclone_init()
 
 app = Client("LeechBot", bot_token=TG_BOT_TOKEN, api_id=APP_ID, api_hash=API_HASH, workers=343)
