@@ -1,5 +1,5 @@
 from pyrogram.handlers import MessageHandler
-from utils.restart_fn import restart
+from bot.utils.restart_fn import restart
 from bot import RESTART_COMMAND, DOWNLOAD_LOCATION
 
 
