@@ -21,7 +21,7 @@
             "description": "Your API_HASH from my.telegram.org",
             "required": true
         },
-        "BOT_OWNER": {
+        "OWNER_ID": {
             "description": "Telegram Id of your account",
             "required": true
         },
