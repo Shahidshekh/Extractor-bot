@@ -1,6 +1,6 @@
 from pyrogram.handlers import MessageHandler
 from utils.restart_fn import restart
-from bot import RESTART_COMMAND, DOWNLOAD_DIR
+from bot import RESTART_COMMAND, DOWNLOAD_LOCATION
 
 
 if __name__ == "__main__":
