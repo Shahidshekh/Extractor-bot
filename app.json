@@ -28,6 +28,10 @@
         "BOT_TOKEN": {
             "description": "Your Bot Token From @BotFather",
             "required": true
+        },
+        "UPSTREAM_REPO" : {
+            "description" : "Upstream repo to update from latest commit",
+            "required" : true
         }
        
     },
