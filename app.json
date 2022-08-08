@@ -25,21 +25,13 @@
             "description": "Telegram Id of your account",
             "required": true
         },
-        "BOT_TOKEN": {
+        "TG_BOT_TOKEN": {
             "description": "Your Bot Token From @BotFather",
             "required": true
         },
-        "MONGODB_URL": {
+        "UPSTREAM_REPO": {
             "description": "Your MongoDB url, Get it from https://www.mongodb.com/",
-            "required": true
-        },
-        "LOGS_CHANNEL": {
-            "description": "Make a private channel and forward a message from that channel to @ChannelidHEXbot and Get this",
-            "required": true
-        },
-        "GOFILE_TOKEN": {
-            "description": "Your gofile.io API token from your profile page",
-            "required": true
+         
         }
     },
     "addons": [],
