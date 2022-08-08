@@ -6,6 +6,7 @@ from time import sleep, time
 from dotenv import load_dotenv
 from pyrogram import Client, enums
 from asyncio import get_event_loop
+from faulthandler import enable as faulthandler_enable
 
 
 main_loop = get_event_loop()
