@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 from pyrogram import Client, enums
 from asyncio import get_event_loop
 from faulthandler import enable as faulthandler_enable
+from subprocess import Popen, run as srun, check_output
 
 
 main_loop = get_event_loop()
