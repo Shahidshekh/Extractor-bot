@@ -30,7 +30,7 @@
             "required": true
         },
         "UPSTREAM_REPO": {
-            "description": "Your MongoDB url, Get it from https://www.mongodb.com/",
+            "description": "Your MongoDB url, Get it from https://www.mongodb.com/"
          
         }
     },
